@@ -9,7 +9,7 @@ const MovieCard = (props) => {
     const {Title, imdbID, Type, Poster, Year} = props;
     const [success, setSuccess] = useState(false);
     const favoriteObject = {
-        userID: user.id,
+        userID: user._id,
         Title: Title,
         imdbID: imdbID,
         Type: Type,
@@ -22,6 +22,7 @@ const MovieCard = (props) => {
         }, 3000)
     }
     const displaySuccess = () => {
+        console.log(user._id);
         return (
             <SuccessContainer>
                 <p>Favorite has been saved!</p>

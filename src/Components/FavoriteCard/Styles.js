@@ -18,6 +18,8 @@ export const CardImage = styled.img`
 export const CardInfo = styled.div`
   padding: 10px;
   margin-bottom: 20px;
+display: flex;
+  flex-direction: column;
 `
 export const RemoveButton = styled.button`
   position: absolute;

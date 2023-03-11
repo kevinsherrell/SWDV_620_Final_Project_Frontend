@@ -9,7 +9,7 @@ const Favorites = () =>{
     const {user} = useAuthContext();
     const {favorites, getFavorites} = useFavoriteContext();
     useEffect(()=>{
-        getFavorites(user.id);
+        getFavorites(user._id);
     },[favorites.length])
 
     const mapFavorites = favorites.map(favorite=>{

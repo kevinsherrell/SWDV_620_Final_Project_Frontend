@@ -83,40 +83,6 @@ export const FavoriteProvider = ({children}) => {
     const getUpdatedState = ()=>{
         return state;
     }
-    //LOGIN
-    // const login = async (obj) => {
-    //     const options = {
-    //         method: "POST",
-    //         headers: {'Content-Type': 'application/json'},
-    //         credentials: "include",
-    //         body: JSON.stringify(obj)
-    //     }
-    //
-    //     fetch(`${URL}/users/login`, options)
-    //         .then(response => response.json())
-    //         .then(response => {
-    //             if (response.error) {
-    //                 return dispatch({
-    //                     type: AUTH_ERROR,
-    //                     payload: response.error
-    //                 })
-    //             }
-    //             localStorage.setItem("user", JSON.stringify(response.data));
-    //
-    //             return dispatch({
-    //                 type: LOGIN_USER,
-    //                 payload: response.data
-    //             })
-    //         })
-    //         .catch(err => console.log(err))
-    // }
-    // // LOGOUT
-    // const logout = () => {
-    //     return dispatch({
-    //         type: LOGOUT_USER,
-    //         payload: {}
-    //     })
-    // }
 
     return (
         <FavoritesContext.Provider value={{

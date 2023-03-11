@@ -52,7 +52,7 @@ const FavoriteCard = (props) => {
                 {/*Type*/}
                 {edit ? <FavInput type="text" placeholder={Type} onChange={(e)=>updateFavObj("Type", favoriteObject, e)}/> : <p>Type: {Type}</p>}
                 {/*Rating*/}
-                {edit ? <FavInput type="number" placeholder={Rating} onChange={(e)=>updateFavObj("Rating", favoriteObject, e)}/> : <p>Rating: {Rating}</p>}
+                {edit ? <FavInput type="number" placeholder={Rating || "No Rating"} onChange={(e)=>updateFavObj("Rating", favoriteObject, e)}/> : <p>Rating: {Rating || "No Rating"}</p>}
 
             </CardInfo>
             {edit ? <DoneButton onClick={() => {
